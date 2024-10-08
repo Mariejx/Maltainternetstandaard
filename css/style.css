@@ -1,1 +1,341 @@
+/* Algemene stijlen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+    color: #333;
+}
 
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin: 20px 0;
+    color: #000;
+}
+
+/* Header stijl */
+header {
+    background-color: #f5f5dc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Afbeelding sectie */
+.indexHorizontale img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Content */
+.sectionIndex {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+.sectionIndex p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+
+/* Media queries voor kleinere schermen */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .sectionIndex {
+        padding: 0 15px;
+    }
+}
+
+
+
+
+/* De grid voor de afbeeldingen */
+.image-links {
+    display: flex;
+    justify-content: space-around;
+    /* Verdeel de afbeeldingen met ruimte ertussen */
+    padding: 20px;
+    gap: 20px;
+    /* Voeg ruimte toe tussen de items */
+}
+
+/* Elk item (afbeelding + tekst) */
+.imageindixitem {
+    text-align: center;
+    /* Centreer de tekst onder de afbeelding */
+    flex: 1 1 30%;
+    /* Zorg dat elke afbeelding 30% van de breedte inneemt */
+}
+
+.imageindixitem img {
+    width: 100%;
+    /* Zorg ervoor dat de afbeelding de volledige breedte van de container vult */
+    border-radius: 10px;
+    /* Optioneel: maak de hoeken van de afbeeldingen afgerond */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Voeg een subtiele schaduw toe voor diepte */
+}
+
+/* Tekst stijl */
+.imageindixitem h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Link onder de afbeeldingen */
+.imageindixitem a {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.imageindixitem a:hover {
+    text-decoration: underline;
+}
+
+/* Responsief ontwerp voor kleinere schermen */
+@media (max-width: 768px) {
+    .image-links {
+        flex-direction: column;
+        /* Zet de afbeeldingen onder elkaar op kleine schermen */
+    }
+
+    .imageindixitem {
+        flex: 1 1 100%;
+        /* Zorg dat de items 100% van de breedte innemen */
+    }
+}
+
+
+
+
+
+/* Over Malta */
+
+div.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: white;
+}
+
+div.scroll-container img {
+
+    padding: 1em;
+    max-width: 30%;
+    width: 50%;
+    /* De container vult de volledige breedte */
+    height: 600px;
+    /* Stel een vaste hoogte in */
+    overflow: hidden;
+    /* Verberg eventuele overflow */
+    position: relative;
+    object-fit: cover;
+}
+
+
+/*  Create an Image Gallery with Horizontal Scroll https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp */
+
+
+.textMalta {
+    max-width: 800px;
+    /* Beperk de breedte van de tekstcontainer tot 800px */
+    margin: 0 auto;
+    /* Centreer de container op de pagina */
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.textMalta h3 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+}
+
+.textMalta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    /* Maak de tekst netjes uitgelijnd */
+}
+
+.textMalta a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.textMalta a:hover {
+    text-decoration: underline;
+}
+
+/* Button artikel */
+/* Knopdesign gegenereerd door ChatGPT, 2024. */
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gray;
+    /* De kleur van de knop */
+    color: white;
+    /* De tekstkleur */
+    text-decoration: none;
+    /* Verwijdert de standaard onderstreping van de link */
+    border-radius: 5px;
+    /* Maakt de hoeken van de knop afgerond */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    /* Zorgt voor een mooie overgang bij hover */
+}
+
+.button:hover {
+    background-color: blue;
+    /* Donkere kleur bij hover */
+}
+
+.button:visited {
+    color: white;
+    /* Behoudt de witte kleur als de link is bezocht */
+}
+
+
+/* artikel */
+
+.articleP p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+
+
+}
+
+.articleP h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+
+}
+
+
+video {
+    width: 300px;
+}
+
+
+.ContainerCenter {
+
+    display: flex;
+    justify-content: center;
+    /* Horizontaal centreren */
+    align-items: center;
+    /* Verticaal centreren */
+
+}
+
+
+
+/* Fotoboek */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+
+}
+
+.grid-container img {
+
+    width: 100%;
+    /* De container vult de volledige breedte */
+    height: 700px;
+    /* Stel een vaste hoogte in */
+    overflow: hidden;
+    /* Verberg eventuele overflow */
+    position: relative;
+    transition: transform 0.3s ease;
+    filter: blur(2px);
+    object-fit: cover;
+
+}
+
+.grid-container img:hover {
+    transform: scale(1.05);
+    filter: none;
+    object-fit: cover;
+}
+
+/* effect hover https://www.w3schools.com/howto/howto_css_blurred_background.asp */
+
+.fotoboek p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: blue;
+
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    background-color: white;
+    padding: 0.5em;
+    text-align: center;
+    margin-top: 2em;
+}
